@@ -6,7 +6,6 @@ from api.v1.serializers import (CategorySerializer, CommentSerializer,
                                 SignInSerializer, SignUpSerializer,
                                 TitleReadOnlySerializer, TitleSerializer,
                                 UserSerializer)
-
 from django.contrib.auth.tokens import default_token_generator
 from django.core.mail import send_mail
 from django.db.models import Avg
