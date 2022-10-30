@@ -1,7 +1,6 @@
 import os
 from datetime import timedelta
 
-
 os.getenv('DB_ENGINE', default=None)
 os.getenv('DB_NAME', default=None)
 os.getenv('POSTGRES_USER', default=None)
