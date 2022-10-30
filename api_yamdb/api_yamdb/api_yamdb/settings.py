@@ -1,13 +1,6 @@
 import os
 from datetime import timedelta
 
-os.getenv('DB_ENGINE', default=None)
-os.getenv('DB_NAME', default=None)
-os.getenv('POSTGRES_USER', default=None)
-os.getenv('POSTGRES_PASSWORD', default=None)
-os.getenv('DB_HOST', default=None)
-os.getenv('DB_PORT', default=None)
-
 # Build paths inside the project like this: os.path.join(BASE_DIR, ...)
 BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 
