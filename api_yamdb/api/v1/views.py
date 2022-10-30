@@ -25,7 +25,6 @@ from rest_framework.viewsets import GenericViewSet, ModelViewSet
 from rest_framework_simplejwt.tokens import AccessToken
 from reviews.models import Category, Genre, Review, Title, User
 
-
 class AuthViewSet(GenericViewSet):
     queryset = User.objects.all()
     permission_classes = [AllowAny]
