@@ -23,8 +23,8 @@ from rest_framework.response import Response
 from rest_framework.viewsets import GenericViewSet, ModelViewSet
 from rest_framework_simplejwt.tokens import AccessToken
 
-from api_yamdb.settings import EMAIL_FROM
 from reviews.models import Category, Genre, Review, Title, User
+from api_yamdb.settings import EMAIL_FROM
 
 
 class AuthViewSet(GenericViewSet):
