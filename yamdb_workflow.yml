@@ -68,7 +68,6 @@ deploy:
         key: ${{ secrets.SSH_KEY }}
         passphrase: ${{ secrets.PASSPHRASE }}
         script: |
-          sudo docker pull sepulka/workflow
           sudo docker-compose stop
           sudo docker-compose rm web
           touch .env
