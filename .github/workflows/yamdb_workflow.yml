@@ -35,8 +35,8 @@ jobs:
         uses: actions/checkout@v2 
       - name: Set up Docker Buildx
         uses: docker/setup-buildx-action@v1
-          with:
-            path: api_yamdb/
+        with:
+          path: api_yamdb/
             
 
       - name: Login to Docker 
