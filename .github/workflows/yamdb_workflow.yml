@@ -36,8 +36,8 @@ jobs:
       - name: Set up Docker Buildx
         uses: docker/setup-buildx-action@v1
         with:
-          path: api_yamdb/
-          dockerfile: api_yamdb/Dockerfile
+          context: .
+            dockerfile: ./api_yamdb/Dockerfile
             
 
       - name: Login to Docker 
