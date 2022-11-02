@@ -14,10 +14,10 @@ jobs:
         python-version: 3.7
 
     - name: Install dependencies
-      script: |
-          touch .env
-          echo SECRET_KEY=${{ secrets.SECRET_KEY }} >> .env
+
       run: | 
+        touch .env
+        echo SECRET_KEY=${{ secrets.SECRET_KEY }} >> .env
         python -m pip install --upgrade pip 
         pip install flake8 pep8-naming flake8-broken-line flake8-return flake8-isort
         pip install -r requirements.txt 
