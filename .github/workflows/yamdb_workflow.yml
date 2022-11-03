@@ -13,14 +13,14 @@ jobs:
         python-version: 3.7
 
     - name: Install dependencies
-      script: |
+
+      run: |
         DB_ENGINE: ${{ secrets.DB_ENGINE }}  >> .env 
         DB_NAME: ${{ secrets.DB_NAME }}  >> .env 
         POSTGRES_USER: ${{ secrets.POSTGRES_USER }}  >> .env 
         POSTGRES_PASSWORD: ${{ secrets.POSTGRES_PASSWORD }}  >> .env 
         DB_HOST: ${{ secrets.DB_HOST }}  >> .env 
         DB_PORT: ${{ secrets.DB_PORT }}  >> .env 
-      run: | 
 
         python -m pip install --upgrade pip 
         pip install flake8 pep8-naming flake8-broken-line flake8-return flake8-isort
